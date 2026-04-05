@@ -17,9 +17,11 @@ load_dotenv()
 
 app = FastAPI(title="EpiWatch API", version="1.0.0")
 
+# CORS Configuration for Deployment
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=["*"], # Change "*" to your specific Vercel URL later in production if needed
+    allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
