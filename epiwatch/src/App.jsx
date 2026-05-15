@@ -9,6 +9,7 @@ import { Activity, Sun, Moon } from "lucide-react";
 import { ErrorBoundary } from "./components/ErrorBoundary";
 import NotificationCenter from "./components/NotificationCenter";
 import DemoMode from "./components/DemoMode";
+import HowItWorks from "./components/HowItWorks";
 
 // Custom Hook for Theme
 function useTheme() {
